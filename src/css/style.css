@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    top:0px;
+}
+.header .top{
+    background-color: #f6f7f8;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+.d-none{
+    display: none;
+}
+
+.header .top .d-none a{
+    color: #262626;
+    margin-right: 1.5rem;
+}
+.header .top .d-none a:hover{
+    text-decoration: underline;
+}
+
+.header .top .d-mb-none span{
+    position: relative;
+}
+.header .top .d-mb-none span::after{
+    background: url(https://abb-bank.az/img/icons/select-arrow-down.svg) 50% no-repeat;
+    background-size: contain;
+    content: ' ';
+    display: inline-flex;
+    height: 100%;
+    transform: rotate(180deg);
+    width: 10px;
+    position: absolute;
+    margin-left: 5px;
+}
+.header .top .info{
+    display: flex;
+    justify-content:space-evenly;
+}
+.header .top .info span{
+    margin-left: 20px;
+    color: #262626;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+}
+.header .top .info .tel{
+    color: #666;
+}
+.header .bottom .top-b .lft{
+    display: flex;
+    align-items: center;
+}
+
+.header .bottom .top-b {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+.slash::after{
+    color: #262626;
+    content: "/";
+    padding: 0 15px;
+}
+.header .bottom .top-b .lft a{
+    margin: 20px;
+}
+.header .bottom{
+    padding: 0 40px;
+    display: none;
+    background-color: #fff;
+    position: relative;
+}
+.header .bottom .top-b{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header .bottom .bottom-b{
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+.header .bottom .bottom-b ul{
+    display: flex;
+    list-style: none;
+}
+.header .bottom .bottom-b ul li .hidn-div{
+    background-color: #fff;
+    left: 0;
+    padding: 40px 0 40px 50px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    display: none;
+}
+.header .bottom .bottom-b li .mnu{
+    color: #262626;
+    font-family:sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    position: relative;
+    cursor: pointer;
+    height: 75px;
+}
+.header .bottom .bottom-b li .mnu::after{
+    background-color: transparent;
+    border-radius: 10px 10px 0 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    transition: .4s;
+    width: 0%;
+}
+.header .bottom .bottom-b li:hover .mnu::after{
+    width: 100%;
+    background-color:#3b8ae0;
+}
+.header .bottom .bottom-b li:hover .hidn-div{
+    display: flex;
+}
+.header .bottom .bottom-b ul .hidn-div .txt{
+    display: flex;
+    flex-wrap: wrap;
+    width: 33.333%;
+    align-content: flex-start;
+}
+.header .bottom .bottom-b .hidn-div .txt span{
+    width: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.header .bottom li{
+    padding-right: 1.5rem;
+}
+.header .bottom span{
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.header .bottom .bottom-b .hidn-div .img{
+    padding-left: 3rem;
+    align-items: center;
+    margin-left: 8.333333%;
+    width: 58.333333%;
+    padding-right: 1.5rem;
+    border-left: 1px solid #ebebeb;
+}
+.mnu-bar{
+    display: block;
+    height: 24px;
+    position: relative;
+    width: 32px;
+}
+.mnu-bar span{
+    background-color: #000;
+    border-radius: 4px;
+    height: 2px;
+    position: absolute;
+    width: 32px;
+}
+.mnu-bar span::after{
+    content: '';
+    background-color: #000;
+    border-radius: 4px;
+    top: -10px;
+    height: 2px;
+    position: absolute;
+    width: 32px;
+}
+.mnu-bar span::before{
+    content: '';
+    background-color: #000;
+    border-radius: 4px;
+    height: 2px;
+    bottom: -10px;
+    position: absolute;
+    width: 32px;
+}
+
+.header .bottom-mbl{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 75px;
+    padding: 0 15px;
+    background-color: #fff;
+}
+
+.first{
+    background: linear-gradient(90deg, #E1EBFF 9.88%, #AFB9CD 92.09%);
+    padding-top: 125px;
+}
+.first .conteyner{
+    display: flex;
+    flex-wrap: wrap;
+}
+.first .conteyner .txt{
+    text-align: center;
+    margin: auto;
+}
+.first .conteyner h1{
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1rem;
+    color: #262626;
+}
+.first .conteyner p{
+    font-size: 14px;
+    color: #262626;
+    margin-bottom: 33px;
+}
+.first .conteyner a{
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid #262626;
+    color: #262626;
+}
+.first .conteyner a:hover{
+    background-color: #262626;
+    color: #fff;
+    border-color: #fff;
+}
+
+.second{
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 40px;
+    justify-content: space-between;
+}
+.second .lbl{
+    width: 100%;
+    display: flex;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg,#f5f6f7,#f0f4f9);
+    padding: 15px;
+}
+.second .lbl .txt{
+    display: flex;
+    width: 66.66%;
+    flex-direction: column;
+    
+    padding:1.5rem 1rem;
+}
+.second h2{
+    width: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.second h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+.second p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #6f7071;
+    margin-bottom: 1rem;
+    margin-top: 0.25rem;
+}
+.second .btn{
+    margin-top: 20px;
+}
+.second a{
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 12px 16px;
+    display:inline-block;
+    text-align: center;
+    transition: .4s;
+    color: #fff;
+    background-color: #3b8ae0;
+}
+.second .lbl .img{
+    display: flex;
+    justify-content: flex-end;
+    width: 33.33%;
+}
+.second .lbl img{
+    height: 190px;
+}
+
+.third{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color: #f9f9f9;
+}
+.third .img{
+    order: 1;
+}
+.third .txt{
+    order: 2;
+    width: 80%;
+    margin: auto;
+}
+.third input{
+    align-items: center;
+    display: block;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: 2px solid #dcdcdc;
+    border-radius: 5px;
+    display: flex;
+    font-size: 16px;
+    height: 60px;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 1rem;
+}
+.third button{
+    background: #d6d9de;
+    color: #99a0ac;
+    display: block;
+    margin: 50px 0;
+    font-size: 18px;
+    border-radius: 6px;
+    height: 50px;
+    width: 100%;
+    border: none;
+}
+.third img{
+    max-width: 100%;
+    height: 100%;
+}
+.third h1{
+    font-size: 48px;
+    font-weight: 600;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+.third p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.fourth{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    background-color: #f5f5f5;
+    justify-content: space-evenly;
+}
+
+.fourth img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+.fourth .content{
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    padding: 0 15px;
+}
+.fourth h2{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.fourth p{
+    font-size: 15;
+    color: #666;
+    margin-bottom: 15px;
+}
+.fourth a{
+    color: #262626;
+    display: inline-flex;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.fourth a::after{
+    background: url(https://abb-bank.az/img/icons/arrow-right-dark.svg) 100% no-repeat;
+    content: "";
+    height: inherit;
+    height: 16px;
+    width: 16px;
+}
+
+@media(min-width:992px){
+
+    .fourth .content{
+        width: 30%;
+    }
+
+    .third{
+        padding: 0 5%;
+    }
+    .third .img{
+        order: 2;
+        width: 58%;
+    }
+    .third .txt{
+        order: 1;
+        width: 41%;
+    }
+    body .first{
+        padding-top: 0;
+        margin-top: 209px;
+    }
+    .second .lbl{
+        width: 32%;
+    }
+    .first .conteyner .txt{
+        width: 33.33%;
+    }
+    .first .conteyner{
+        height: 570px;
+        justify-content: center;
+    }
+    .first .conteyner .img{
+        width: 33.33%;
+    }
+    .header .bottom-mbl{
+        display: none;
+    }
+    .header .top .d-mb-none{
+        display: none;
+    }
+    .header .top{
+        padding: 0 40px;
+    }
+    .header .bottom{
+        display: block;
+    }
+    .d-none{
+        display: flex;
+    }
+}
